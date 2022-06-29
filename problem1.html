@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    const listOfProducts = [{
+    productName: "TV",
+    quantity: 10,
+    description: "television"
+  },
+  {
+    productName: "AC",
+    quantity: 5,
+    description: "air conditioner"
+  },
+  {
+    productName: "TV",
+    quantity: 10,
+    description: "television"
+  },
+  {
+    productName: "AC",
+    quantity: 5,
+    description: "air conditioner"
+  },
+  {
+    productName: "FAN",
+    quantity: 10,
+    description: "Ceiling Fan"
+  }
+];
+
+const object = {};
+for(let i =0; i<listOfProducts; i++){
+    if(object[listOfProducts[i].productName] === undefined) {
+        object[listOfProducts[i].productName] = 1;
+
+    }
+    else{
+        object[listOfProducts[i].productName]++;
+    }
+}
+console.log(object);
+
+
+
+</script>
+
+
+<!--1. you need to write a function say, getUniqueProductCount 
+which should return count of each Product(as an object) 
+present in the given list of Products considering Product Name as Key. -->
